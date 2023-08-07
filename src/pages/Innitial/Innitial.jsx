@@ -1,5 +1,5 @@
 import { Fragment } from "react";
-import { Header, Menu, Banner } from "../../components";
+import { Header, Menu, Banner, Footer } from "../../components";
 import style from "./Innitial.module.scss";
 
 export function Innitial() {
@@ -12,6 +12,7 @@ export function Innitial() {
           <Banner />
         </section>
       </main>
+      <Footer />
     </Fragment>
   );
 }

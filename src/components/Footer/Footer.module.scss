@@ -1,0 +1,43 @@
+@import "/src/styles/var";
+
+footer {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px;
+  background-color: $azul-escuro;
+  box-shadow: 0px -2px 30px rgba($color: #000000, $alpha: 0.5);
+  box-sizing: border-box;
+  position: fixed;
+  bottom: 0;
+  width: 100vw;
+
+  .socials {
+    list-style: none;
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 12px;
+    padding: 0;
+
+    &__itens {
+      text-align: center;
+
+      a {
+        color: $cor-do-texto;
+        font-size: 24px;
+      }
+    }
+  }
+
+  p {
+    color: $cor-do-texto;
+    font-family: $fonte-padrao-regular, sans-serif;
+    font-size: 18px;
+
+    a {
+      text-decoration: none;
+      color: $cor-do-texto;
+    }
+  }
+}
