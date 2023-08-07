@@ -1,1 +1,1 @@
-export { Innitial } from "./Innitial/Innitial";
+export { Home } from "./Home/Home";

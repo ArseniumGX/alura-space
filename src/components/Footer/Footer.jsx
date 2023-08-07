@@ -26,13 +26,14 @@ export function Footer() {
           </a>
         </li>
       </ul>
-      <p>Deselvolvido por José "ArseniumGX" Macedo</p>
+      <p>Desenvolvido por José &quot;ArseniumGX&quot; Macedo</p>
       <p>
         Powered by{" "}
         <a
           href="https://alura.com.br"
           target="_blank"
           title="Alura | Cursos online de Tecnologia"
+          rel="noreferrer"
         >
           Alura
         </a>
