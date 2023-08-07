@@ -1,6 +1,6 @@
 import "./styles/global.scss";
-import { Innitial } from "./pages";
+import { Home } from "./pages";
 
 export default function App() {
-  return <Innitial />;
+  return <Home />;
 }
