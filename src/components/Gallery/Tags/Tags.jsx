@@ -1,14 +1,19 @@
 import style from "./Tags.module.scss";
+import photos from "../../../moch/photos.json";
 
-export function Tags() {
+export function Tags({ tags, photosFilter, setItems }) {
   return (
     <section className={style.tags}>
-      <p>Busque por tags:</p>
+      <p>Filtre por tags:</p>
       <ul className={style.tags__list}>
-        <li>Estrelas</li>
-        <li>Galáxias</li>
-        <li>Luas</li>
-        <li>Planetas</li>
+        {tags.map((tag) => {
+          return (
+            <li key={tag} onClick={() => photosFilter(tag)}>
+              {tag}
+            </li>
+          );
+        })}
+        <li onClick={() => setItems(photos)}>Todas</li>
       </ul>
     </section>
   );
